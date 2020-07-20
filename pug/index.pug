@@ -1,0 +1,34 @@
+extends not-compiling/_layout
+
+block title
+	title Index page
+block head
+	meta(name="keywords" content="")
+	meta(name="description" content="")
+
+block content
+	section.promo
+		.promo__top
+		video.promo__video(loop='loop' muted='muted' preload='auto' autoplay='autoplay')
+			source(src='https://twisterassetsfilestorage.blob.core.windows.net/assets/h1Kalt1brft9/video/videohive.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+		.inner
+			.promo__box
+				.promo__left
+					h1.promo__title Dołącz do społeczności odnoszących sukcesy inwestorów kryptowalut
+					img.promo__rating-img(src="img/trustpilot.png")
+
+				.promo__right
+					//- form goes here
+	
+
+
+	footer.footer
+	
+		//svg sprite how to use example
+		//- svg.icon-mark: use(xlink:href="#mark")
+
+	//svg sprite include
+	.svg-sprite.is-hidden
+		include ../img/svg-output/svg-sprite.svg
+
+
