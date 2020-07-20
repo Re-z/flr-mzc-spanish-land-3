@@ -18,17 +18,60 @@ block content
 					img.promo__rating-img(src="img/trustpilot.png")
 
 				.promo__right
+					.form-block-2.whitee._mnfx-form-container(data-action='https://lp.monfex.com/api/action/FizFP1PClil3/register')
 					//- form goes here
-	
+
+
+	section.prefooter
+		.inner
+			.steps
+				h2.section-title Od Twojej przyszłości dzielą Cię tylko 3 kroki
+				.steps__box
+					.steps__item
+						.steps__item-img
+							svg.icon-thumb: use(xlink:href="#thumb")
+						strong.steps__item-title ZAREJESTRUJ SIĘ
+						p.steps__item-text Załóż darmowe konto w zaledwie kilka minut
+					.steps__item
+						.steps__item-img
+							svg.icon-graph: use(xlink:href="#graph")
+						strong.steps__item-title ĆWICZ
+						p.steps__item-text Udoskonalaj swoje umiejętności dzięki próbnemu kontu i materiałom edukacyjnymt
+					.steps__item
+						.steps__item-img
+							svg.icon-comp: use(xlink:href="#comp")
+						strong.steps__item-title WPŁAĆ & HANDLUJ
+						p.steps__item-text 12 najlepszych aktywów dla Twoich transakcji
+			.accept
+				h2.section-title AKCEPTUJEMY
+				.accept__box
+					img.accept__img(src="img/visa.png" alt="")
+					img.accept__img(src="img/mastercard.png" alt="")
+					img.accept__img(src="img/btc.png" alt="")
+					img.accept__img(src="img/eth.png" alt="")
+
+
 
 
 	footer.footer
-	
-		//svg sprite how to use example
-		//- svg.icon-mark: use(xlink:href="#mark")
+		.inner
+			.footer__socials
+				a(href="https://www.facebook.com/monfexofficial")
+					svg.icon-fb: use(xlink:href="#fb")
+				a(href="https://twitter.com/MonfexOfficial")
+					svg.icon-twitter: use(xlink:href="#twitter")
+				a(href="https://www.youtube.com/channel/UCKOmo6wFN1aUN55wbF8VQRg")
+					svg.icon-youtube: use(xlink:href="#youtube")
+				a(href="https://t.me/monfexofficial")
+					svg.icon-tg: use(xlink:href="#tg")
 
+
+			small.footer__copy Copyright 2020 All rights Reserved.
 	//svg sprite include
 	.svg-sprite.is-hidden
 		include ../img/svg-output/svg-sprite.svg
 
 
+//- todo
+//- data-action-form
+//- убрать первое поле формы
