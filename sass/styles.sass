@@ -14,7 +14,7 @@ $mob: 600
 
     padding: 0
     &::selection
-        background: #ED145B
+        background: #00B649
         color: white
 html
     scroll-behavior: smooth
@@ -107,6 +107,7 @@ button
     padding: 120px 0 240px 0
     background: url('../img/prefooter-bg.png') center bottom no-repeat
 .steps
+    margin-top: 240px
     margin-bottom: 240px
     &__box
         display: flex
@@ -163,7 +164,16 @@ button
         color: white
         +roboto
 
-
+.instruments
+    &__title
+        margin-bottom: 20px !important
+    &__subtitle
+        margin: 0 auto
+        max-width: 600px
+        font-size: 26px
+        line-height: 38px
+        text-align: center
+        margin-bottom: 90px
 
 .section-title
     font-weight: bold
@@ -172,7 +182,18 @@ button
     margin-bottom: 100px
     text-align: center
 
-
+.instruments-block-descr-btn
+    background: #00B649
+    border-radius: 3px
+    color: white
+    font-weight: bold
+    font-size: 26px
+    width: 100%
+    text-align: center
+    height: 65px
+    line-height: 65px
+    &:hover
+        background: orange
 
 //generate svg icons with classes
 $svg-icons: [ 'thumb' 102px 106px, 'graph' 106px 104px, 'comp' 107px 103px, 'fb' 9px 16px, 'twitter' 17px 14px, 'youtube' 17px 13px, 'tg' 17px 14px]

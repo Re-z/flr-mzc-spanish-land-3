@@ -17,12 +17,15 @@ block content
 					h1.promo__title Dołącz do społeczności odnoszących sukcesy inwestorów kryptowalut
 					img.promo__rating-img(src="img/trustpilot.png")
 
-				.promo__right
+				.promo__right#form
 					.form-block-2.whitee._mnfx-form-container(data-action='https://lp.monfex.com/api/action/FizFP1PClil3/register')
 					//- form goes here
 
 
+
 	section.prefooter
+		include instruments.pug
+
 		.inner
 			.steps
 				h2.section-title Od Twojej przyszłości dzielą Cię tylko 3 kroki
@@ -70,6 +73,9 @@ block content
 	//svg sprite include
 	.svg-sprite.is-hidden
 		include ../img/svg-output/svg-sprite.svg
+
+
+
 
 
 //- todo
