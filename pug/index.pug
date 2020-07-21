@@ -8,23 +8,26 @@ block head
 
 block content
 	section.promo
-		.promo__top
-		video.promo__video(loop='loop' muted='muted' preload='auto' autoplay='autoplay')
-			source(src='https://twisterassetsfilestorage.blob.core.windows.net/assets/h1Kalt1brft9/video/videohive.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
-		.inner
+		//- .promo__top
+		.promo__video-wrap
+			video.promo__video(loop='loop' muted='muted' preload='auto' autoplay='autoplay')
+				source(src='https://twisterassetsfilestorage.blob.core.windows.net/assets/h1Kalt1brft9/video/videohive.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+		.inner.promo__inner
 			.promo__box
 				.promo__left
 					h1.promo__title Dołącz do społeczności odnoszących sukcesy inwestorów kryptowalut
 					img.promo__rating-img(src="img/trustpilot.png")
 
 				.promo__right#form
+					h2.promo__right-title Załóż konto
 					.form-block-2.whitee._mnfx-form-container(data-action='https://lp.monfex.com/api/action/FizFP1PClil3/register')
-					//- form goes here
-
+					p.promo__postform Masz już konto? Proszę 
+						a(href="https://trade.monfex.com/sign-in") się zalogować.  
 
 
 	section.prefooter
 		include instruments.pug
+
 
 		.inner
 			.steps
@@ -68,7 +71,6 @@ block content
 				a(href="https://t.me/monfexofficial")
 					svg.icon-tg: use(xlink:href="#tg")
 
-
 			small.footer__copy Copyright 2020 All rights Reserved.
 	//svg sprite include
 	.svg-sprite.is-hidden
@@ -80,4 +82,3 @@ block content
 
 //- todo
 //- data-action-form
-//- убрать первое поле формы
