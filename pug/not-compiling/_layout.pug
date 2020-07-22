@@ -18,8 +18,8 @@ html(lang="pl")
 	body
 		#app
 			block content
-		script(src='https://twisterfilestorage.blob.core.windows.net/twister/_regFormExternalUtm.min.js')
-		script(src='https://lp.monfex.com/maxi-trade-reg-form.js')
+		script(src='https://twisterfilestorage.blob.core.windows.net/twister/_regFormExternalUtmHandel.min.js')
+		script(src='https://twisterfilestorage.blob.core.windows.net/twister/hndl_form.min.js')
 		script(src='js/jquery-ui.js')
 		script(src='js/owl.carousel.js')
 		script(src='js/Chart.bundle.js')
@@ -33,7 +33,7 @@ html(lang="pl")
 				password: "Hasło",
 				code: "Kod",
 				phone: "Telefon",
-				termsDescr: "Zaznaczając to pole, wyrażam zgodę na <a href='https://www.monfex.com/privacy-policy'> Politykę Prywatności </a>  i <a href='https://www.monfex.com/terms-of-service'> Warunki Świadczenia Usług.. </a>",
+				termsDescr: "Zaznaczając to pole, wyrażam zgodę na Politykę Prywatności </a>  i  Warunki Świadczenia Usług.",
 				btnDescr: "Dołącz Teraz",
 				selectCountry: "Wybierz kraj",
 				fieldRequired: "Pole jest wymagane.",
@@ -48,7 +48,6 @@ html(lang="pl")
 				tooLong: "Demasiado largo",
 			}
 		script.
-
 			document.addEventListener('DOMContentLoaded', function () {
 				var formContainer = document.querySelectorAll('._mnfx-form-container');
 					if (formContainer.length > 0) {
