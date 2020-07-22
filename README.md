@@ -1,5 +1,1 @@
-# Code templates
-- PUG
-- SASS
-- Autoprefixer
-- Svg sprite
+## DEMO: https://re-z.github.io/flr-mzc-spanish-land-3/index.html
